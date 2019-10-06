@@ -27,8 +27,8 @@ form:
         type: bool
     route:
       type: text
-      title: PLUGIN_ONLINE_SCOUT_MANAGER.ROUTE
-      text: PLUGIN_ONLINE_SCOUT_MANAGER.ROUTE_TEXT
+      title: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_ROUTE
+      text: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_ROUTE_TEXT
     header:
       type: section
       title: PLUGIN_ONLINE_SCOUT_MANAGER.CONFIG_TITLE
