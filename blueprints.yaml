@@ -1,0 +1,39 @@
+name: Online Scout Manager
+version: 0.1.0
+description: Downloads programme and event data from Online Scout Manager (OSM) for display in Grav
+icon: plug
+author:
+  name: Andrew Grafham
+  email: andrew.grafham@gmail.com
+homepage: https://github.com/grafster/grav-plugin-online-scout-manager
+demo: http://demo.yoursite.com
+keywords: grav, plugin, osm
+bugs: https://github.com/grafster/grav-plugin-online-scout-manager/issues
+docs: https://github.com/grafster/grav-plugin-online-scout-manager/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    header:
+      type: section
+      title: PLUGIN_ONLINE_SCOUT_MANAGER.CONFIG_TITLE
+      text: PLUGIN_ONLINE_SCOUT_MANAGER.CONFIG_TEXT
+    osm_username:
+      type: text
+      label: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_USERID
+      help: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_USERID_HELP
+    osm_password:
+      type: password
+      label: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_SECRET
+      help: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_SECRET_HELP

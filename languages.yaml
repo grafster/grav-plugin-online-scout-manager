@@ -1,0 +1,8 @@
+en:
+  PLUGIN_ONLINE_SCOUT_MANAGER:
+    OSM_USERID: OSM user id
+    OSM_USERID_HELP: Enter your numerical userID for OSM
+    OSM_SECRET: OSM secret
+    OSM_SECRET_HELP: Enter your secret for OSM
+    CONFIG_TITLE: Online Scout Manager Login Details
+    CONFIG_TEXT: Enter the userid and password here. Note that this is not the same as your username and password. How to get this info TBC.
