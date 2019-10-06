@@ -11,6 +11,11 @@ keywords: grav, plugin, osm
 bugs: https://github.com/grafster/grav-plugin-online-scout-manager/issues
 docs: https://github.com/grafster/grav-plugin-online-scout-manager/blob/develop/README.md
 license: MIT
+dependencies:
+    - { name: grav, version: '>=1.6.8' }
+    - { name: shortcode-core, version: '>=4.1.6' }
+
+
 
 form:
   validation: strict

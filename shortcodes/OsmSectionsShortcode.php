@@ -11,7 +11,6 @@ class OsmSectionsShortcode extends OsmShortcode {
         $this->shortcode->getHandlers()->add('osm-sections', function(ShortcodeInterface $sc) {
 
             $roles = $this->getRoles();
-            dump($roles);
             $retval = '<table class="osm-section-table"><tr><th>Section ID</th><th>Name</th></tr>';
 
 
