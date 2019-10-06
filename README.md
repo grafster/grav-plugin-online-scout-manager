@@ -4,7 +4,7 @@ The **Online Scout Manager** Plugin is an extension for [Grav CMS](http://github
 
 ## Installation
 
-Installing the Online Scout Manager plugin can be done in one of three ways: The GPM (Grav Package Manager) installation method lets you quickly install the plugin with a simple terminal command, the manual method lets you do so via a zip file, and the admin method lets you do so via the Admin Plugin.
+Installing the Online Scout Manager plugin can be done manualally via a zip file.
 
 ## Dependencies
 
@@ -55,7 +55,7 @@ You can then use the following shortcodes on your page
 
 ## Credits
 
-(Online Scout manager)[https://onlinescoutmanager.com] 
+[Online Scout manager](https://onlinescoutmanager.co.uk)
 
 ## To Do
 
