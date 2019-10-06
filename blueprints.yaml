@@ -33,11 +33,11 @@ form:
       type: section
       title: PLUGIN_ONLINE_SCOUT_MANAGER.CONFIG_TITLE
       text: PLUGIN_ONLINE_SCOUT_MANAGER.CONFIG_TEXT
-    osm_username:
+    osm_userid:
       type: text
       label: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_USERID
       help: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_USERID_HELP
-    osm_password:
+    osm_secret:
       type: password
       label: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_SECRET
       help: PLUGIN_ONLINE_SCOUT_MANAGER.OSM_SECRET_HELP

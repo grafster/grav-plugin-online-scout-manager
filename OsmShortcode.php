@@ -57,8 +57,8 @@ abstract class OsmShortcode extends Shortcode {
         global $OnlineScoutManager_userid, $OnlineScoutManager_secret;
         if ($parts == null) {
             $parts           = array();
-            $parts['userid'] = $this->grav['config']->get('plugins.online-scout-manager.osm_username');
-            $parts['secret'] = $this->grav['config']->get('plugins.online-scout-manager.osm_password');
+            $parts['userid'] = $this->grav['config']->get('plugins.online-scout-manager.osm_userid');
+            $parts['secret'] = $this->grav['config']->get('plugins.online-scout-manager.osm_secret');
         }
 
 
