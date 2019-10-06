@@ -6,3 +6,5 @@ en:
     OSM_SECRET_HELP: Enter your secret for OSM
     CONFIG_TITLE: Online Scout Manager Login Details
     CONFIG_TEXT: Enter the userid and password here. Note that this is not the same as your username and password. How to get this info TBC.
+    ROUTE: Route for OSM login
+    ROUTE_TEXT: Route for OSM Login

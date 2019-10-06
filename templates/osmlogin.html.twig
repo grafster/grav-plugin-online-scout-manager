@@ -1,0 +1,62 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css-compiled/nucleus.css',102) %}
+        {% do assets.addCss('theme://css-compiled/template.css',101) %}
+        {% do assets.addCss('theme://css/custom.css',100) %}
+        {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
+        {% do assets.addCss('theme://css/slidebars.min.css') %}
+        {% do assets.addCss('theme://css/slideme.css') %}
+        {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
+            {% do assets.addCss('theme://css/nucleus-ie10.css') %}
+        {% endif %}
+        {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
+            {% do assets.addCss('theme://css/nucleus-ie9.css') %}
+            {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
+            {% do assets.addCss('theme://js/html5shiv-printshiv.min.js') %}
+        {% endif %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% do assets.add('jquery', 101) %}
+        {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
+        {% do assets.addJs('theme://js/deliver.js') %}
+        {% do assets.addJs('theme://js/slidebars.min.js') %}
+        {% do assets.addJs('theme://js/jquery.slideme2.js') %}
+        {% if theme_config.sticky_menu.enabled %}
+            {% do assets.addJs('theme://js/jquery-scrolltofixed-min.js') %}
+            {% do assets.addJs('theme://js/fixed-header.js') %}
+        {% endif %}
+    {% endblock %}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
+
+{% endblock head%}
+</head>
+
+<body id="top" class="{{ page.header.body_classes }}">
+<form action=" https://www.onlinescoutmanager.co.uk/users.php?action=authorise"
+   method="post">
+	 Email Address: <input type="text" name="email"> <br>
+	 Password: <input type="password" name="password"> <br>
+	 <input type="hidden" name="token" value="9f2efda43d953e9b7b9060ce0c7a3fc1">
+	 <input type="hidden" name="apiid" value="307">
+   <input type="submit" value="Submit"/>
+</form>
+
+
+
+</body>
+</html>
